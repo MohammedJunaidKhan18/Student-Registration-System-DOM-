@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header-title">
+        <h1>STUDENT   REGISTRATION   SYSTEM</h1>
+        <p>Student registration system is designed to manage student records such as Student name, Student ID, Email ID, and Contact No. It provides functionalities for editing and deleting records</p>
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a id="formLink">REGISTRATION FORM</a></li>
+            <li><a id="listLink">ENROLLED STUDENTS</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="container">
+
+
+            <!-- Registration Form -->
+
+
+            <section id="formSection" class="form-container">
+                <h1>REGISTRATION FORM</h1>
+                <label for="name">Student Name:</label>
+                <input type="text" id="name" placeholder="Enter student name">
+                
+                <label for="id">Student ID:</label>
+                <input type="text" id="id" placeholder="Enter student ID">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter student email">
+                
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" placeholder="Enter contact number">
+                
+                <button id="addBtn">Add Student</button>
+            </section>
+        
+
+
+
+            <!-- Enrolled Students -->
+            <section id="listSection" class="table-container" style="display: none;">
+                <h1>Enrolled Students</h1>
+                <section class="scroll-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Student ID</th>
+                                <th>Email</th>
+                                <th>Contact</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentTable">
+                            <!-- Dynamic rows will be added here -->
+                        </tbody>
+                    </table>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
